@@ -1,0 +1,26 @@
+
+> ai-freelance-vercel-build-demo@1.0.0 test:e2e
+> playwright test
+
+[WebServer] (node:45915) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 5 workers
+
+(node:45919) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45917) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45920) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45918) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  5 [chromium] › e2e/application.spec.ts:3:5 › home serves successfully with application identity (394ms)
+  ✓  2 [chromium] › e2e/application.spec.ts:9:5 › deployment details are directly addressable (400ms)
+  ✓  3 [chromium] › e2e/application.spec.ts:32:5 › mobile routes remain usable without horizontal overflow (450ms)
+  ✓  4 [chromium] › e2e/application.spec.ts:25:5 › missing page returns 404 and supports recovery (507ms)
+  ✓  1 [chromium] › e2e/application.spec.ts:15:5 › navigation connects both pages without browser errors (556ms)
+
+  5 passed (1.5s)

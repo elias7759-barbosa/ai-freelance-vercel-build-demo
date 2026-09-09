@@ -16,13 +16,26 @@ Node.js 24.x, Next.js App Router, React, TypeScript, ESLint, Vitest, and Playwri
 
 ## Troubleshooting Scenario
 
-Deployment validation is separate from local compilation. Evidence and scenario documentation will be recorded after baseline verification.
+A stale `outputDirectory: "dist"` setting left the local Next.js build green while the actual Vercel CLI adapter failed to locate deployment artifacts. Removing that single override restored the default `.next` contract.
+
+| Revision | Next build | Local Vercel build |
+| --- | --- | --- |
+| `baseline-working` | PASS | PASS |
+| `bug-broken` | PASS | FAIL |
+| `bug-fixed` | PASS | PASS |
+
+The identical deployment verifier produced all three results. Read [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for reproduction, diagnosis and the minimal fix.
 
 ## Screenshots
 
 ![Application overview](portfolio/screenshots/01-application.png)
 
-Real Chromium browser capture of the local production application. Deployment evidence will be added after the troubleshooting exercise.
+Real Chromium browser capture of the local production application. See [evidence provenance](portfolio/EVIDENCE.md) and the [portfolio summary](portfolio/PORTFOLIO-SUMMARY.md).
+
+![Local build passes](portfolio/screenshots/02-local-build-pass.png)
+![Vercel build fails](portfolio/screenshots/03-vercel-build-fail.png)
+![Vercel build restored](portfolio/screenshots/04-vercel-build-fixed.png)
+![Validation](portfolio/screenshots/05-validation.png)
 
 ## Validation
 
@@ -58,7 +71,7 @@ None required. The application does not use accounts, a database, credentials, o
 
 ## Project Status
 
-Baseline implementation. LOCAL ONLY: no safe free cloud scope available. No public cloud deployment.
+Technical exercise completed, independently approved and merged. Repository remains private pending publication review. LOCAL ONLY: no safe free cloud scope available. No public cloud deployment.
 
 ### Dependency audit limitation
 

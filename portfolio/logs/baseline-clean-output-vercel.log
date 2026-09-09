@@ -1,0 +1,69 @@
+
+> ai-freelance-vercel-build-demo@1.0.0 verify:vercel
+> node scripts/verify-vercel.mjs
+
+LOCAL VERCEL CLI BUILD — no cloud deployment or linked account
+Vercel CLI 59.14.0 (Node.js 24.14.1)
+Running "install" command: `npm ci`...
+npm warn deprecated stream-to-promise@2.2.0: Deprecated. Use node:stream/promises and node:stream/consumers instead.
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 696 packages, and audited 697 packages in 6s
+
+191 packages are looking for funding
+  run `npm fund` for details
+
+27 vulnerabilities (1 low, 12 moderate, 14 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Detected Next.js version: 16.3.4
+Running "npm run build"
+
+> ai-freelance-vercel-build-demo@1.0.0 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.ts took 573ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 598ms
+  Running TypeScript ...
+  Finished TypeScript in 703ms ...
+  Collecting page data using 5 workers ...
+  Generating static pages using 5 workers (0/4) ...
+  Generating static pages using 5 workers (1/4) 
+  Generating static pages using 5 workers (2/4) 
+  Generating static pages using 5 workers (3/4) 
+✓ Generating static pages using 5 workers (4/4) in 176ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+└ ○ /deployment-info
+
+
+○  (Static)  prerendered as static content
+
+Traced Next.js server files in: 11.124ms
+Created all serverless functions in: 40.852ms
+Collected static files (public/, static/, .next/static): 0.624ms
+{
+  "status": "ok",
+  "outputDir": "<checkout>/.vercel/output",
+  "outputDirRelative": ".vercel/output",
+  "target": "preview",
+  "message": "Build completed successfully.",
+  "next": [
+    {
+      "command": "vercel deploy --non-interactive",
+      "when": "Deploy the build output"
+    }
+  ]
+}

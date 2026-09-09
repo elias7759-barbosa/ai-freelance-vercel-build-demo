@@ -1,0 +1,52 @@
+
+> ai-freelance-vercel-build-demo@1.0.0 verify
+> npm test && npm run typecheck && npm run lint && npm run build
+
+
+> ai-freelance-vercel-build-demo@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.0 <checkout>
+
+
+ Test Files  1 passed (1)
+      Tests  9 passed (9)
+   Start at  21:07:19
+   Duration  415ms (environment 60%, tests 20%, setup 11%, transform 7%, import 2%)
+
+
+> ai-freelance-vercel-build-demo@1.0.0 typecheck
+> tsc --noEmit
+
+
+> ai-freelance-vercel-build-demo@1.0.0 lint
+> eslint .
+
+
+> ai-freelance-vercel-build-demo@1.0.0 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.ts took 12ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 607ms
+  Running TypeScript ...
+  Finished TypeScript in 557ms ...
+  Collecting page data using 5 workers ...
+  Generating static pages using 5 workers (0/4) ...
+  Generating static pages using 5 workers (1/4) 
+  Generating static pages using 5 workers (2/4) 
+  Generating static pages using 5 workers (3/4) 
+✓ Generating static pages using 5 workers (4/4) in 178ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+└ ○ /deployment-info
+
+
+○  (Static)  prerendered as static content
+

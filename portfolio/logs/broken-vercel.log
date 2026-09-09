@@ -1,0 +1,76 @@
+
+> ai-freelance-vercel-build-demo@1.0.0 verify:vercel
+> node scripts/verify-vercel.mjs
+
+LOCAL VERCEL CLI BUILD — no cloud deployment or linked account
+Vercel CLI 59.14.0 (Node.js 24.14.1)
+Running "install" command: `npm ci`...
+npm warn deprecated stream-to-promise@2.2.0: Deprecated. Use node:stream/promises and node:stream/consumers instead.
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 696 packages, and audited 697 packages in 6s
+
+191 packages are looking for funding
+  run `npm fund` for details
+
+27 vulnerabilities (1 low, 12 moderate, 14 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Detected Next.js version: 16.3.4
+Running "npm run build"
+
+> ai-freelance-vercel-build-demo@1.0.0 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+✓ Running next.config.ts took 572ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 610ms
+  Running TypeScript ...
+  Finished TypeScript in 722ms ...
+  Collecting page data using 5 workers ...
+  Generating static pages using 5 workers (0/4) ...
+  Generating static pages using 5 workers (1/4) 
+  Generating static pages using 5 workers (2/4) 
+  Generating static pages using 5 workers (3/4) 
+✓ Generating static pages using 5 workers (4/4) in 176ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+└ ○ /deployment-info
+
+
+○  (Static)  prerendered as static content
+
+{
+  "status": "error",
+  "reason": "build_failed",
+  "message": "The Next.js output directory \"dist\" was not found at \"<checkout>/dist\". This is usually caused by one of the following:\n\n1. The \"Output Directory\" setting in your project is misconfigured. Check your project settings and ensure the output directory matches your Next.js configuration.\n\n2. If using Turborepo, ensure your task outputs include the Next.js build directory. Add \"dist/**\" to the \"outputs\" array in your turbo.json for the build task.\n\n3. The build command did not complete successfully. Check the build logs above for errors.",
+  "next": [
+    {
+      "command": "vercel pull --yes --non-interactive",
+      "when": "Ensure project settings are present"
+    },
+    {
+      "command": "vercel build --yes --non-interactive",
+      "when": "re-run build"
+    }
+  ]
+}
+Error: The Next.js output directory "dist" was not found at "<checkout>/dist". This is usually caused by one of the following:
+
+1. The "Output Directory" setting in your project is misconfigured. Check your project settings and ensure the output directory matches your Next.js configuration.
+
+2. If using Turborepo, ensure your task outputs include the Next.js build directory. Add "dist/**" to the "outputs" array in your turbo.json for the build task.
+
+3. The build command did not complete successfully. Check the build logs above for errors.
+Learn More: https://err.sh/vercel/vercel/now-next-routes-manifest
