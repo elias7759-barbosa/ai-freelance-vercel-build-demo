@@ -24,7 +24,7 @@ Baseline and fixed: unit/integration 9/9, production Chromium E2E 5/5, typecheck
 | 04-vercel-build-fixed.png | Labeled visual summary of actual fixed-revision success | fixed-vercel.log — npm run verify:vercel |
 | 05-validation.png | Labeled visual summary of actual fixed-revision checks | fixed-verify.log, fixed-e2e.log, fixed-vercel.log |
 
-Logs are included in [logs/](logs/). Personal checkout paths are replaced with `<checkout>` and terminal color escapes are removed. Exit codes were captured by the command runner; npm/CLI text is retained, including the failed build and toolchain audit warnings. Images do not substitute for executable verification.
+Logs are included in [logs/](logs/). Personal checkout paths are replaced with `<checkout>` and terminal color escapes and trailing whitespace are removed. Exit codes were captured by the command runner; npm/CLI text is retained, including the failed build and toolchain audit warnings. Images do not substitute for executable verification.
 
 ## Verifier integrity
 
