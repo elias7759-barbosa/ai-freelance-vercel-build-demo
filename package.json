@@ -1,0 +1,43 @@
+{
+  "name": "ai-freelance-vercel-build-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test:e2e": "playwright test",
+    "verify": "npm test && npm run typecheck && npm run lint && npm run build",
+    "verify:vercel": "node scripts/verify-vercel.mjs"
+  },
+  "keywords": [],
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "22.20.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.4",
+    "jsdom": "29.1.1",
+    "typescript": "6.0.3",
+    "vercel": "59.14.0",
+    "vitest": "5.0.0"
+  },
+  "private": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "overrides": {
+    "tar": "7.5.22"
+  }
+}

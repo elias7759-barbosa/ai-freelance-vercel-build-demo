@@ -1,0 +1,6 @@
+.next/
+node_modules/
+.git/
+playwright-report/
+test-results/
+coverage/
