@@ -71,7 +71,11 @@ None required. The application does not use accounts, a database, credentials, o
 
 ## Project Status
 
-Technical exercise completed, independently approved and merged. Repository remains private pending publication review. LOCAL ONLY: no safe free cloud scope available. No public cloud deployment.
+**Demonstration Project.** The troubleshooting scenario is complete, independently reviewed and published as a technical portfolio sample.
+
+Validation is intentionally LOCAL ONLY: the project demonstrates reproducible Next.js and Vercel CLI build troubleshooting without claiming a cloud preview or production deployment.
+
+The runtime dependency audit reports zero advisories. Remaining development-toolchain advisories are documented below and do not imply that the toolchain is vulnerability-free.
 
 ### Dependency audit limitation
 
